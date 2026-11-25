@@ -1,0 +1,13 @@
+# Claves: nunca subir
+**/gemini-image-gen.local.md
+.claude/
+.env
+*.local.md
+# Temporales y material de video
+.DS_Store
+Thumbs.db
+_to_delete/
+*.mp4
+*.mov
+*.mxf
+*.prproj

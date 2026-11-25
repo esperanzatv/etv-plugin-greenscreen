@@ -1,0 +1,7 @@
+{
+  "name": "esperanza-tv-equipo",
+  "owner": { "name": "Esperanza TV" },
+  "plugins": [
+    { "name": "esperanza-tv", "source": "./", "description": "Equipo de edición para los temas de Esperanza TV (chroma, 3 cámaras, set virtual)." }
+  ]
+}

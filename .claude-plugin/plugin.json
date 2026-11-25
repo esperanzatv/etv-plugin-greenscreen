@@ -1,0 +1,7 @@
+{
+  "name": "esperanza-tv",
+  "version": "0.1.1",
+  "description": "Equipo de edición para los temas de Esperanza TV: un coordinador que reparte el trabajo entre subagentes (sincronía y cortes, guion visual, imágenes con Gemini, fondos, montaje en Premiere y control de calidad).",
+  "author": { "name": "Esperanza TV" },
+  "keywords": ["premiere", "video", "multicamara", "chroma", "esperanza-tv"]
+}
