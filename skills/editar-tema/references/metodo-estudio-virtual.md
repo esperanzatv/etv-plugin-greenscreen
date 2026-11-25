@@ -15,17 +15,15 @@ Cuando el usuario corrija o pida algo de forma estable, propón añadirlo aquí 
 - Color: **siempre preguntar antes de colorizar** cuál clip o ángulo es la referencia de color, o si se colorea todo sin referencia. Nunca asumir la referencia de un tema anterior. (En Tema 5 la referencia fue el Ángulo 3.)
 - Si el usuario no indica clip de referencia: proponer **dos estilos**, cada uno mostrado en un **fotograma de muestra**, y esperar a que elija antes de aplicar. (23-nov-2026)
 - El pastor debe verse integrado a la luz cálida del set (ladrillo, apliques, ambiente nocturno).
-- Exportaciones: `Extreme Pro/AMAYA/EXPORTADOS`.
+- Exportaciones: `<carpeta del proyecto>/EXPORTADOS`.
 - Nunca borrar ni sobrescribir material, proyectos o exports: versiones nuevas (v1, v2, v3).
 
 ## Dónde están las cosas
 
-- Disco: `/Volumes/Extreme Pro/AMAYA/`
-  - `Pr. Amaya/Cámara 1|2|3/` clips de cámara (4K, 59.94 fps; Cam 2 es 4:2:2 10-bit)
-  - `Pr Amaya imagenes y sesiones/Tema N/` proyecto `Tema N.prproj` y la carpeta de imágenes del video de la TV
-  - `Fondo2.PNG` set base · `Fondo2_CAM2.png` · `Fondo2_CAM3.png` fondos por perspectiva
-  - `EXPORTADOS/`
-- Pide acceso a `/Volumes/Extreme Pro/AMAYA` con device_request_folder_access.
+- No se requiere ningún disco ni nombre de carpeta en particular. Al empezar, pregunta cuál es la **carpeta del proyecto** (`<carpeta del proyecto>`) y pide acceso a ella con device_request_folder_access.
+- Lista su contenido y confirma con el usuario dónde están los clips de las 3 cámaras (en Tema 5: 4K, 59.94 fps; Cam 2 en 4:2:2 10-bit), el proyecto `.prproj`, las imágenes del video de la TV y los fondos.
+- `Fondo2.PNG` es el set base; `Fondo2_CAM2.png` y `Fondo2_CAM3.png` son los fondos por perspectiva. Si no aparecen, pídeselos al usuario.
+- Exporta a `<carpeta del proyecto>/EXPORTADOS` (créala si no existe).
 - Por cada tema pregunta: qué clip de cada cámara corresponde y si el set y las posiciones de cámara son los mismos de Tema 5.
 
 ## Flujo por tema
@@ -89,7 +87,7 @@ Cuando el usuario corrija o pida algo de forma estable, propón añadirlo aquí 
 
 ## Export (de Eddie)
 
-- H.264 en MP4, 1920x1080, mismos fps que la secuencia, 10–16 Mbps, AAC 320 kbps 48 kHz, a `AMAYA/EXPORTADOS` con nombre `Tema N - vX.mp4`.
+- H.264 en MP4, 1920x1080, mismos fps que la secuencia, 10–16 Mbps, AAC 320 kbps 48 kHz, a `<carpeta del proyecto>/EXPORTADOS` con nombre `Tema N - vX.mp4`.
 - Antes de exportar: sin medios offline, audio definido (qué pistas suenan), duración del fondo y la TV ≥ la del pastor.
 - Después: verifica el archivo con `ffprobe`/`mdls` (resolución, duración, códec) y reporta.
 

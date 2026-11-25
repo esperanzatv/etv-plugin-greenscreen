@@ -10,7 +10,7 @@ Pide, por ejemplo: "Edita el Tema 6". El coordinador te hará las preguntas inic
 - Agentes: `sincronia-cortes`, `guion-visual`, `generador-imagenes`, `fondos-perspectiva`, `montaje-premiere` (solo uno a la vez), `control-calidad`.
 
 ## Requisitos
-- Disco "Extreme Pro" con la carpeta AMAYA conectada.
+- Una carpeta de proyecto con los clips y fondos, en cualquier ubicación (se elige al empezar cada tema).
 - Adobe Premiere Pro 2027 y control del computador habilitado en la app de escritorio.
 - Plugin Claude Banana con la clave de Gemini: variable de entorno `GEMINI_API_KEY` (recomendado) o el archivo `gemini-image-gen.local.md` en formato frontmatter.
 
@@ -20,4 +20,4 @@ Pide, por ejemplo: "Edita el Tema 6". El coordinador te hará las preguntas inic
 3. Revisar y fusionar en `main`.
 
 ## Instalar
-En Claude: Customize → Plugins → Add → Add marketplace, escribir `usuario/esperanza-tv-plugin`, instalar **esperanza-tv** y activar la sincronización automática.
+En Claude: Customize → Plugins → Add → Add marketplace, escribir `esperanzatv/etv-plugin-greenscreen`, instalar **esperanza-tv** y activar la sincronización automática.

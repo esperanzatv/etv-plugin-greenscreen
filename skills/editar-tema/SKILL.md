@@ -24,7 +24,7 @@ Lánzalos con el Agent tool usando su nombre como `subagent_type`. Dales en el p
 
 ## Paso 1 · Preguntas iniciales (todas juntas, con AskUserQuestion)
 
-1. **Tema y clips**: número/nombre del tema y qué clip de Cámara 1, 2 y 3 le corresponde (lista las carpetas para ofrecer opciones).
+1. **Carpeta, tema y clips**: cuál es la carpeta del proyecto, número/nombre del tema y qué clip de Cámara 1, 2 y 3 le corresponde (lista las carpetas para ofrecer opciones).
 2. **Set**: ¿mismo fondo y mismas posiciones de cámara que Tema 5?
 3. **Color** (obligatorio): ¿qué clip o ángulo es la referencia de color, o colorizar sin referencia? Si no hay referencia, avisa que propondrás dos estilos en dos fotogramas.
 4. **Video de la TV**: ¿imágenes nuevas según lo que dice el pastor (Gemini), reutilizar imágenes existentes, o una mezcla?
@@ -34,7 +34,7 @@ No preguntes lo que ya esté en las notas de estilo o en el pedido.
 
 ## Paso 2 · Preparación
 
-- Pide acceso a `/Volumes/Extreme Pro/AMAYA` si no está conectado.
+- Usa la carpeta del proyecto que indique el usuario (cualquier ubicación) y pide acceso a ella si no está conectada. Pasa su ruta a cada subagente.
 - **Clave de Gemini**: si `GEMINI_API_KEY` no está definida, pide al usuario el archivo `gemini-image-gen.local.md` (o que configure la variable en el entorno). Crea `/home/claude/esperanza/.claude/gemini-image-gen.local.md` con formato de frontmatter (`---`, `api_key: "..."`, `model: "..."`, `---`) y `chmod 600`. Nunca muestres la clave.
 - Crea una carpeta de trabajo por tema: `/home/claude/esperanza/tema-N/` (cloud) y anota las rutas del disco.
 - Crea la lista de tareas (TaskCreate) con un paso por subagente.
